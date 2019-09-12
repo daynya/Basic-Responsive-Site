@@ -1,16 +1,20 @@
+body {
+    font-family: 'helvetica', sans-serif;
+}
+
 .container {
     background-color: white;
     padding: 40px;
     color: #2D111C;
 }
 
-body {
-    font-family: 'helvetica', sans-serif;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .modal-title {
     font-family: 'Abril Fatface', cursive;
     text-align: center;
+}
+
+.navbar {
+    text-align: right;
 }
 
 .nav-item,
@@ -22,22 +26,11 @@ h1, h2, h3, h4 {
 }       
 
 .img-fluid {
+    display: block;
     max-width: 100%;
     max-height: 275px;
     border-radius: 50%;
     margin: 20px auto;
-}
-
-.link {
-    text-decoration: underline;
-    color: #530606;
-    transition: .5s;
-}
-
-.link:hover {
-    background-color: #530606;
-    color: #fff;
-    text-decoration: none;
 }
 
 ul {
@@ -51,8 +44,45 @@ ul {
     border-color: #031d3b;
 }
 
+#modal-btn {
+    display: block;
+    margin: auto;
+    background-color: #ff6fab;
+    border: none;
+    transition: 0.5s;
+    margin-bottom: 5%;
+}
+
+#modal-btn:hover {
+    background-color: #f03080;
+}
+
+.modal-body {
+    padding: 7%;
+}
+
+#modal-close-btn {
+    background-color: #f03080;
+    border: none;
+}
+
+#modal-close-btn:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
+}
+
+#exampleModalCenterTitle {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     background-color: #014242;
+    padding: 5%;
 }
 
 footer p {
@@ -68,7 +98,7 @@ color: white;
 }
 
 .icon:hover {
-    color: #be165c;
+    color: #ff6fab;
 }
 
 @media screen and (min-width: 768px) {
