@@ -14,26 +14,29 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #046868;">
-            <a class="navbar-brand" href="index.html">Daynya's Responsive Website</a>
+            <a class="navbar-brand page-title" href="index.html">Daynya's Responsive Website</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <p class="responsive-nav-title">Daynya's Responsive Website</p>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Link</a>
+                        <a class="nav-link" href="https://daynya.com" target="_blank">Daynya</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Another Link</a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/daynya-quigley-187a7416/" target="_blank">Let's Connect</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="container">
-            <div class="row">
+            <div class="row greeting">
                 <h1>Welcome!</h1>
             </div>
             <div class="row">
@@ -42,32 +45,33 @@
                     You'll notice that I don't have any extra stuff here. I'm pretty
                     passionate about functional design. I like to let the content be 
                     the message. In this case, I am building this site as a quick skills 
-                    assessment for Randall-Reilly. There isn't much content that needs
+                    assessment for <a href="https://www.randallreilly.com/" class="link" target="_blank">Randall-Reilly.</a> There isn't much content that needs
                     to be displayed, so I may as well go ahead and make it personal.
                 </p>
                 <h4>So, on that note, allow me to introduce you to my cats.</h4>
             </div>
             <div class="row">
-                <div class="col">
-                    <img src="img/seymour.jpg" class="img-fluid" alt="Seymour">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="img/seymour.jpg" class="img-fluid" id="seymour" alt="Seymour">
                     <h2>This is Seymour</h2>
                     <p>
-                        Seymour is a Maine Coon. If you don't like cats, well, all you
-                        need to know is that they are large, and generally pretty amazing,
-                        feline specimens. Seymour is coming up on 9 years old, and I have
-                        had him in my life since he was an 8 week old kitten. To be honest,
-                        most of the time he still acts like an 8 week old kitten. Never have
-                        I ever met a more needy cat. He's precious and attached at my hip,
-                        and I wouldn't have it any other way. His interests include eating,
-                        sleeping, disrupting my sleeping, and the occasional nap in the sun.
-                        We need to have his fur shaved off every 6-9 months, and this is
-                        the result. A majestic lion. Seymour weighs about 19 pounds, which 
-                        seems pretty large for a cat, but honestly when he's shaved, he
-                        doesn't look nearly that large.
+                        Seymour is a Maine Coon. If you don't like cats and have no idea what
+                        a Maine Coon is, well, all you need to know is that they are large, 
+                        and generally pretty amazing feline specimens. Seymour is coming up 
+                        on 9 years old, and I have had him in my life since he was an 8 week 
+                        old kitten. To be honest, most of the time he still acts like an 8 week
+                        old kitten. Never have I ever met a more needy cat. He's precious and
+                        attached at my hip, and I wouldn't have it any other way. His interests
+                        include eating, sleeping, disrupting my sleeping, and the occasional
+                        nap in the sun.  We need to have his fur shaved off every 6-9 months,
+                        and this is the result. A majestic lion. Seymour weighs about 19 pounds,
+                        which seems pretty large for a cat, but honestly when he's shaved, he
+                        doesn't look nearly that large. <span class="hover">Hover over his picture
+                        for a shot of him with all of his hair!</span>
                     </p>
                 </div>
-                <div class="col">
-                    <img src="img/bean.JPG" class="img-fluid" alt="Bean">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="img/bean.JPG" class="img-fluid" id="bean" alt="Bean">
                     <h2>This is Bean</h2>
                     <p>
                         Bean is your typical tabby female. She's sassy, she's lazy, and she
@@ -80,7 +84,8 @@
                         though she has yet to do anything useful with them (that I've seen, anyway).
                         She is a huge fan of napping and lounging on pillows, and cannot resist
                         a good old fashioned game of chase the string. She's pretty chill, and
-                        a genuine delight to spend time with.
+                        a genuine delight to spend time with. <span class="hover">Hover over her
+                        picture for an additional relaxation pose!</span>
                     </p>
                 </div>
             </div>
@@ -99,7 +104,7 @@
                     <div class="modal-body">
                         <div class="container-fluid">
                             <div class="row justify-content-center">
-                                <img src="img/robert.jpg" class="img-fluid" alt="Robert">
+                                <img src="img/robert.jpg" class="img-fluid" id="robert" alt="Robert">
                             </div>
                             <div class="row justify-content-center">
                                 <h2>This is Robert</h2>
@@ -124,7 +129,8 @@
                                     She's highly sensitive, and quick to get her feelings hurt. Once you win
                                     her over, you have a close pal for life. I'm grateful she lets me 
                                     share a home with her. She's a fascinating specimen, and I'm honored
-                                    that she chose us to be her family.
+                                    that she chose us to be her family. <span class="hover">Hover over her
+                                    image to see her at full rest.</span>
                                 </p>
                             </div>
                         </div>
@@ -152,7 +158,39 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+        <script>
+            $(function() {
+                $("#seymour").on({
+                    mouseenter: function() {
+                        $(this).attr('src', "img/seymour2.jpg");
+                    },
+                    mouseleave: function() {
+                        $(this).attr('src', "img/seymour.jpg");
+                    }
+                });
+            });
+            $(function() {
+                $("#bean").on({
+                    mouseenter: function() {
+                        $(this).attr('src', "img/bean2.jpg");
+                    },
+                    mouseleave: function() {
+                        $(this).attr('src', "img/bean.jpg");
+                    }
+                });
+            });
+            $(function() {
+                $("#robert").on({
+                    mouseenter: function() {
+                        $(this).attr('src', "img/robert2.jpg");
+                    },
+                    mouseleave: function() {
+                        $(this).attr('src', "img/robert.jpg");
+                    }
+                });
+            });
+        </script>
+
     </body>
 
 </html>
